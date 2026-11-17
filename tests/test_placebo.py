@@ -8,7 +8,7 @@ YEARS = [2005, 2005, 2006, 2009]
 
 
 def test_draws_match_original_notebook_rng():
-    """Same draws as the Michigan analysis notebook (rng.choice then rng.permutation)."""
+    """Draws are rng.choice of mills, then rng.permutation of years, from one seeded generator."""
     rng = np.random.default_rng(20261108)
     expected = []
     for _ in range(20):

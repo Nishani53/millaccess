@@ -3,7 +3,7 @@
 The network is built from road line geometries in a projected coordinate system
 (units of metres). Distances are computed with Dijkstra's algorithm from each mill,
 and the straight-line "off-road" legs from each location and each mill to its
-nearest road node are added, as in Khanal et al. (Michigan mill-closure study).
+nearest road node are added.
 """
 
 from __future__ import annotations
@@ -230,7 +230,7 @@ def download_tiger_roads(
 def state_county_fips(state_fips: str, n_counties: int) -> list[str]:
     """County FIPS codes for states that number counties 001, 003, ... (odd numbers).
 
-    Michigan: ``state_county_fips("26", 83)``. Check your state's list; some states
+    Maine: ``state_county_fips("23", 16)``. Check your state's list; some states
     have gaps or independent cities.
     """
     return [f"{state_fips}{c:03d}" for c in range(1, 2 * n_counties, 2)]

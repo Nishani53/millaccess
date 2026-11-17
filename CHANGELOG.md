@@ -12,4 +12,3 @@
 - Closed-vs-continuing-mill design (`stack_matched`)
 - `pooled_did` reports both location-event pairs (`n_units`) and distinct locations
   (`n_locations`), and reports groups without observations as NaN instead of failing
-- Replication of the Michigan study: 53 of 53 published estimates reproduced
