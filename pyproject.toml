@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "millaccess"
+dynamic = ["version"]
+description = "Road-based mill access and mill-closure event studies for forest economics"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Naresh Khanal" }]
+keywords = ["forest economics", "wood procurement", "market access", "event study", "mill closure", "timber harvest"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.10",
+    "linearmodels>=6.0",
+]
+
+[project.optional-dependencies]
+geo = ["geopandas>=0.14", "shapely>=2.0", "requests>=2.31"]
+test = ["pytest>=8", "shapely>=2.0"]
+dev = ["millaccess[geo,test]", "ruff>=0.6"]
+
+[project.urls]
+Homepage = "https://github.com/YOUR-USERNAME/millaccess"
+Issues = "https://github.com/YOUR-USERNAME/millaccess/issues"
+
+[tool.hatch.version]
+path = "src/millaccess/__init__.py"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120

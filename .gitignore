@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Data and outputs: never commit raw or large data
+data/
+*.pkl
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.zip
+*.parquet
+*.xlsx
+EE_exports*/
+tiger/
+tiger_roads/
+Results/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# replication output
+michigan_replication_results.csv

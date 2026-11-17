@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "millaccess: road-based mill access and mill-closure event studies for forest economics"
+type: software
+authors:
+  - family-names: Khanal
+    given-names: Naresh
+    affiliation: "University of Maine"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+version: 0.1.0.dev0
+license: MIT
+repository-code: "https://github.com/YOUR-USERNAME/millaccess"
+keywords:
+  - forest economics
+  - wood procurement
+  - market access
+  - event study
