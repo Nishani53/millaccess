@@ -2,7 +2,7 @@
 
 **Road-based mill access and mill-closure event studies for forest economics.**
 
-[![tests](https://github.com/YOUR-USERNAME/millaccess/actions/workflows/tests.yml/badge.svg)](https://github.com/YOUR-USERNAME/millaccess/actions/workflows/tests.yml)
+[![tests](https://github.com/NISHANI53/millaccess/actions/workflows/tests.yml/badge.svg)](https://github.com/NISHANI53/millaccess/actions/workflows/tests.yml)
 
 Forest inventory tools such as [rFIA](https://github.com/doserjef/rFIA) and
 [pyFIA](https://github.com/mihiarc/pyfia) estimate *what is in the forest*. `millaccess`
@@ -31,7 +31,7 @@ harvest, FIA plot data, stumpage prices) into:
 ## Installation
 
 ```bash
-pip install "millaccess[geo] @ git+https://github.com/YOUR-USERNAME/millaccess"
+pip install "millaccess[geo] @ git+https://github.com/NISHANI53/millaccess"
 ```
 
 The `[geo]` extra adds geopandas, shapely and requests for building road networks and

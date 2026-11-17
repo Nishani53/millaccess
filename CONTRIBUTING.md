@@ -5,7 +5,7 @@ Bug reports, questions and suggestions are welcome as GitHub issues.
 To work on the code:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/millaccess
+git clone https://github.com/NISHANI53/millaccess
 cd millaccess
 pip install -e ".[dev]"
 pytest
